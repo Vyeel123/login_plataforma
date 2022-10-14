@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Student</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+	<!-- Contenido del registro-->
+	<section class="full-box dashboard-contentPage">	
+		<!-- Registro -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+
+					<ul class="nav nav-tabs" style="margin:auto; width: 82%;">
+					  	<li class="active"><a data-toggle="tab">RELLENE LOS DATOS DEL ESTUDIANTE</a></li>					  	
+					</ul>
+
+					<div id="myTabContent" class="tab-content">
+						<div class="tab-pane fade active in" id="new">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-xs-12 col-md-10 col-md-offset-1">
+									    <form action="">
+											<br><br>
+									    	<fieldset>Datos del Estudiante</fieldset>
+									    	<div class="form-group label-floating">
+											  <label class="control-label">Nombres</label>
+											  <input class="form-control" type="text" id="txtNombres">
+											</div>
+
+											<div class="form-group label-floating">
+											  <label class="control-label">Apellido Paterno</label>
+											  <input class="form-control" type="text" id="txtApellidoP">
+											</div>
+
+											<div class="form-group label-floating">
+											  <label class="control-label">Apellido Materno</label>
+											  <input class="form-control" type="text" id="txtApellidoM">
+											</div>
+
+											<div class="form-group label-floating">
+											  <label class="control-label">Email</label>
+											  <input class="form-control" type="text" id="txtEmail">
+											</div>
+
+											<div class="form-group label-floating">
+											  <label class="control-label">Teléfono/Celular</label>
+											  <input class="form-control" type="text" id="txtTelefono">
+											</div>
+
+											<div class="form-group">
+											  <label class="control-label">Fecha de Nacimiento</label>
+											  <input class="form-control" type="date" id="txtFechaNacimiento">
+											</div>
+
+											<div class="form-group">
+										        <label class="control-label">Género</label>
+										        <select class="form-control" id="txtGenero">
+										          	<option>Mujer</option>
+										          	<option>Hombre</option>
+										        </select>
+										    </div>
+
+											<div class="form-group label-floating">
+												<label class="control-label">Nacionalidad</label>
+												<input class="form-control" type="text" id="txtNacionalidad">
+											</div>
+
+										    <div class="form-group">
+										        <label class="control-label">Departamento</label>
+										        <select class="form-control" id="txtDepartamento">
+										          <option>Santa Cruz</option>
+										          <option>La Paz</option>
+										          <option>Cochabamba</option>
+										          <option>Oruro</option>
+										          <option>Potosí</option>
+												  <option>Pando</option>
+												  <option>Chuquisaca</option>
+												  <option>Tarija</option>
+												  <option>Beni</option>
+										        </select>
+										    </div>
+
+										    <br><br>
+										    <fieldset>Datos para el Login</fieldset>
+										    <div class="form-group label-floating">
+											  <label class="control-label">Usuario</label>
+											  <input class="form-control" type="text" id="txtUsuario">
+											</div>
+											<div class="form-group label-floating">
+											  <label class="control-label">Contraseña</label>
+											  <input class="form-control" type="password" id="txtContraseña">
+											</div>
+										    <p class="text-center">
+										    	<button type="button" href="login.html" class="btn btn-info btn-raised btn-sm" id="guardarDatos"><i class="zmdi zmdi-floppy"></i> Confirmar Registro</button>
+										    </p>
+									    </form>
+									</div>
+								</div>
+							</div>
+						</div>				  	
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--====== Scripts -->
+	<script src="./js/jquery-3.1.1.min.js"></script>
+	<script src="./js/sweetalert2.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/material.min.js"></script>
+	<script src="./js/ripples.min.js"></script>
+	<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script src="./js/scripts.js"></script>
+	<script src="./js/datosJs.js"></script>
+	<script>
+		$.material.init();
+	</script>
+</body>
+</html>
