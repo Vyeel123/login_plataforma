@@ -1,0 +1,57 @@
+.container{
+    background: #eaeaea;
+    max-width: 600px;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 5%;
+}
+
+.header{
+    border-bottom: 1px solid black;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.lista-tareas{
+    list-style: none;
+    padding: 0;
+}
+
+.lista-tareas li{
+    margin: 10px 0;
+    background: #cecbcb;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.lista-tareas li:hover{
+    background: rgb(175, 166, 166);
+}
+
+.boton-subir{
+    background: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.boton-subir:hover{
+    background: rgb(26, 114, 37);
+}
+
+.input-tarea{
+    border: none;
+    background: #cecbcb;
+    padding: 4px;
+    width: 100%;
+    outline: none;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.input-tarea:focus{
+    background: #eaeaea;
+}
