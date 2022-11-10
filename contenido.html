@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Materia: Lenguaje</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/materiasCss.css">
+</head>
+<body>
+	<!-- Lado Izquierdo -->
+	<section class="full-box cover dashboard-sideBar">
+		<div class="full-box dashboard-sideBar-bg btn-menu-dashboard"></div>
+		<div class="full-box dashboard-sideBar-ct">
+			<!--Titulo -->
+			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title">
+				CATÓLICO SANTA CRUZ <i class="zmdi zmdi-close btn-menu-dashboard visible-xs"></i>
+			</div>
+
+			<!-- Lado del estudiante y navegación -->
+			<div class="full-box dashboard-sideBar-UserInfo">
+				<figure class="full-box">
+					<img src="./assets/img/img_avatar.png" alt="UserIcon">
+					<figcaption class="text-center text-titles"> Sebastian Parada Cespedes</figcaption>
+				</figure>
+
+				<!--Boton de salir-->
+				<ul class="full-box list-unstyled text-center">
+					<li>
+						<a class="btn-exit-system">
+							<p class="zmdi zmdi-sign-in"></p>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<!--Menu -->
+			<ul class="list-unstyled full-box dashboard-sideBar-Menu">
+				<li>
+					<a href="menu.html">
+						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> Menu
+					</a>
+				</li>
+
+				<!--Secciones del menu-->
+				<li>
+					<a class="btn-sideBar-SubMenu">
+						<i class="zmdi zmdi-group zmdi-hc-fw"></i> Mis Secciones <i class="zmdi zmdi-caret-down pull-right"></i>
+					</a>
+					<ul class="list-unstyled full-box">
+						<li>
+							<a href="materias.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Materias</a>
+						</li>
+						<li>
+							<a href="horarios.html"><i class="zmdi zmdi-time zmdi-hc-fw"></i> Horarios</a>
+						</li>
+						<li>
+							<a href="anuncios.html"><i class="zmdi zmdi-email zmdi-hc-fw"></i> Anuncios</a>
+						</li>
+					</ul>
+				</li>				
+			</ul>
+		</div>
+	</section>
+
+	<!-- Contenido del Menu-->
+	<section class="full-box dashboard-contentPage">
+		<!-- Barra de arriba -->
+		<nav class="full-box dashboard-Navbar">
+			<ul class="full-box list-unstyled text-right">
+
+				<!-- Puntitos de arriba para ocultar la barra izquierda-->
+				<li class="pull-left">
+					<a class="btn-menu-dashboard"><i class="zmdi zmdi-more-vert"></i></a>
+				</li>			
+				<!--Boton de ayuda-->
+				<li>
+					<a href="#!" class="btn-modal-help">
+						<i class="zmdi zmdi-help-outline"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<!-- Menu -->
+		<div class="container-fluid">
+			<div class="page-header">
+				<h1 class="text-titles" style="text-align: center;"> CONTENIDO</h1>			  
+			</div>
+		</div>
+		
+
+        <div class="container">
+            <div class="header">
+                <h1 class="titulo">LISTA DE TAREAS</h1>
+            </div>
+            <ul class="lista-tareas">
+                <li>
+                    <tr type="text" class="input-tarea">REALIZA ESTE CONTENIDO</tr>
+                    <input type="file" class="boton-subir">               
+                </li>
+                <li>
+                    <tr type="text" class="input-tarea">MATERIAL PRACTICO</tr>
+                    <input type="file" class="boton-subir">
+                </li>
+                <li>
+                    <tr type="text" class="input-tarea">REALIZA UN INFORME</tr>
+                    <input type="file"  class="boton-subir">
+                </li>
+            </ul>
+        </div>
+	</section>
+
+
+	<!-- Texto de Ayuda -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="Dialog-Help">
+	  	<div class="modal-dialog" role="document">
+		    <div class="modal-content">
+			    <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			    	<h4 class="modal-title">Ayuda</h4>
+			    </div>
+			    <div class="modal-body">
+			        <p>
+			        	Si tienes alguna duda, consulta con tu docente y/o administración.
+			        </p>
+			    </div>
+		      	<div class="modal-footer">
+		        	<button type="button" class="btn btn-primary btn-raised" data-dismiss="modal"><i class="zmdi zmdi-thumb-up"></i>Ok</button>
+		      	</div>
+		    </div>
+	  	</div>
+	</div>
+
+
+	
+	<!--====== Scripts -->
+	<script src="./js/jquery-3.1.1.min.js"></script>
+	<script src="./js/sweetalert2.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/material.min.js"></script>
+	<script src="./js/ripples.min.js"></script>
+	<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script src="./js/scripts.js"></script>
+	<script src="./js/datosJs.js"></script>
+	<script>
+		$.material.init();
+	</script>
+</body>
+</html>
